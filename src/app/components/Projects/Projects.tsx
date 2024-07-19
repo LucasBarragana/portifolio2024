@@ -23,14 +23,14 @@ export default function Projects() {
     };
 
     return (
-        <section id="Projects" className="max-w-6xl mx-auto py-10 relative">
+        <section id="Projects" className="max-w-6xl mx-auto px-10 xl:px-0 py-10 relative">
             <div className="relative">
                 <h1 className="text-4xl font-semibold font-inter my-auto relative top-10">{t('title')}</h1>
                 <h1 className="text-8xl absolute top-0 left-0 opacity-30">
                     {t('title2')}
                 </h1>
             </div>
-            <div className="grid grid-cols-2 gap-10 mt-20 font-inter">
+            <div className="grid gird-cols-1 lg:grid-cols-2 gap-10 mt-20 font-inter">
                 {projects.map((project, projectId) => (
                     <div key={project.id} className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                         <div>
@@ -71,12 +71,12 @@ export default function Projects() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="flex mt-8  font-semibold ">
-                                <Link href={project.githubLink} target='blank' className="text-blue-500 hover:underline mr-4">
+                            <div className="block lg:flex mt-8  font-semibold ">
+                                <Link href={project.githubLink} target='blank' className="text-blue-500 hover:underline mr-0 lg:mr-4">
                                     GitHub
                                     <Image src="/github.png" alt='' width={36} height={36} />
                                 </Link>
-                                <Link href={project.liveLink} target='blank' className="text-blue-500 hover:underline">Live Site</Link>
+                                <Link href={project.liveLink} target='blank' className="text-blue-500 mt-4 lg:mt-0 hover:underline">Live Site</Link>
                             </div>
                         </div>
                     </div>

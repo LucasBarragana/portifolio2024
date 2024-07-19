@@ -11,11 +11,11 @@ export default function NavBar() {
 
   return (
     <header className="max-w-6xl mx-auto font-inter">
-      <nav className="flex justify-between align-center items-center py-4 font-semibold text-medium">
+      <nav className="flex justify-between align-center items-center py-4 px-10 xl:px-0 font-semibold text-medium">
         <div className='w-12 h-12 rounded-full relative overflow-hidden'>
           <Image src="/perfil.jpg" alt='foto' layout='fill' objectFit='cover' />
         </div>
-        <div className="space-x-10">
+        <div className=" hidden lg:block space-x-10">
           <Link href="/#hero" className='hover:text-blue-700'>{t('home')}</Link>
           <Link href="/#About" className='hover:text-blue-700'>{t('about')}</Link>
           <Link href="/#Services" className='hover:text-blue-700'>{t('services')}</Link>

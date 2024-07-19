@@ -34,7 +34,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="Contact" className="max-w-6xl mx-auto py-10 relative">
+        <section id="Contact" className="max-w-6xl mx-auto px-10 xl:px-0 py-10 relative">
             <div className="relative">
                 <h1 className="text-4xl font-semibold font-inter my-auto relative top-10">{t('title')}</h1>
                 <h1 className="text-8xl absolute top-0 left-0 opacity-30">
@@ -44,7 +44,7 @@ export default function Contact() {
             <div className='font-inter bg-gray-200 dark:bg-gray-800 mt-20 rounded-xl'>
                 <div>
                     <form ref={form} onSubmit={sendEmail}>
-                        <div className="flex flex-col justify-center items-center p-10 rounded-lg mx-40">
+                        <div className="flex flex-col justify-center items-center p-10 rounded-lg mx-10 lg:mx-40">
                             <div>
                                 <h2 className="text-3xl mb-3 font-semibold mb-10">{t('subTitle1')}</h2>
                             </div>
@@ -88,9 +88,9 @@ export default function Contact() {
                                 ></textarea>
                             </div>
 
-                            <button  id="btnSend"
+                            <button  id="btnSend cl"
                                 type="submit"
-                                className="flex items-center justify-center px-4 py-2 rounded">
+                                className="flex items-center justify-center px-4 py-2 rounded border boder-black">
                                 {t('send')}
                                 <Image width={22} height={22}  src="/send.png" alt="send" />
                             </button>

@@ -38,12 +38,12 @@ const About: React.FC = () => {
   };
 
   return (
-    <section id="About" className="max-w-6xl mx-auto py-10 font-inter dark:text-white">
-      <div className="flex justify-between">
-        <div className="w-1/3">
+    <section id="About" className="max-w-6xl mx-auto py-10 px-10 xl:px-0 font-inter dark:text-white">
+      <div className="block lg:flex justify-between">
+        <div className="w-full lg:w-1/3">
           IMAGEM
         </div>
-        <div className="w-2/3">
+        <div className="w-full lg:w-2/3">
           <h3 className="text-green-500 font-semibold text-2xl">{t('h3')}?</h3>
           <h2 className="text-3xl font-semibold py-2">{t('h2')}</h2>
           <p className=''>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quae, 
@@ -51,7 +51,7 @@ const About: React.FC = () => {
             Ad sapiente rerum accusamus vero voluptate ratione.</p>
           <div className="bg-black dark:bg-white w-full h-[2px] my-6"></div>
           <div className=''>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-10 lg:gap-4">
               <p><span className="flex font-semibold text-blue-700 text-lg"><Person />{t('name')}:</span> <span>Lucas Oliveira Barragana</span></p>
               <p><span className="flex font-semibold text-blue-700 text-lg"><Terminal />{t('expirience')}:</span> <span>{t('time')}</span></p>
               <p><span className="flex font-semibold text-blue-700 text-lg"><Email />Email:</span> <span>lucasobarragana@gmail.com</span></p>
