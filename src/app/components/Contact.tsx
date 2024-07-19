@@ -1,15 +1,16 @@
 'use client'
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'; 
 import Image from 'next/image';
-
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
     const t = useTranslations('Contact');
 
     const form = useRef<HTMLFormElement>(null); 
     const [isSent, setIsSent] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -33,8 +34,38 @@ export default function Contact() {
             );
     };
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                        observer.disconnect();
+                    }
+                });
+            },
+            { threshold: 0.3 } 
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <section id="Contact" className="max-w-6xl mx-auto px-10 xl:px-0 py-10 relative">
+        <section
+            id="Contact"
+            ref={sectionRef}
+            className={`max-w-6xl mx-auto px-10 xl:px-0 py-10 relative transition-opacity duration-1000 ${
+                isVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+        >
             <div className="relative">
                 <h1 className="text-4xl font-semibold font-inter my-auto relative top-10">{t('title')}</h1>
                 <h1 className="text-8xl absolute top-0 left-0 opacity-30">
@@ -88,9 +119,9 @@ export default function Contact() {
                                 ></textarea>
                             </div>
 
-                            <button  id="btnSend cl"
+                            <button  id="btnSend"
                                 type="submit"
-                                className="flex items-center justify-center px-4 py-2 rounded border boder-black">
+                                className="flex items-center justify-center px-4 py-2 rounded border boder-gray-900 dark:border-white">
                                 {t('send')}
                                 <Image width={22} height={22}  src="/send.png" alt="send" />
                             </button>

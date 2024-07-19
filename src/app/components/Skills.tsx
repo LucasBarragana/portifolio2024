@@ -1,26 +1,58 @@
 'use client'
 
-import Image from "next/image"
-
-import {useTranslations} from 'next-intl';
+import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function Skills() {
     const t = useTranslations('Skills');
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                        observer.disconnect();
+                    }
+                });
+            },
+            { threshold: 0.3 } 
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
 
     return (
-        <section id="Skills" className="max-w-6xl mx-auto px-10 xl:px-0 py-10 relative">
+        <section
+            id="Skills"
+            ref={sectionRef}
+            className={`max-w-6xl mx-auto px-10 xl:px-0 py-10 relative transition-opacity duration-1000 ${
+                isVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+        >
             <div className="relative">
                 <h1 className="text-2xl md:text-4xl font-semibold font-inter my-auto relative top-6 md:top-10">{t('title')}</h1>
                 <h1 className="text-6xl md:text-8xl absolute top-0 left-0 opacity-30">
                     {t('title2')}
                 </h1>
             </div>
-            <div className="mt-20 font-inter"> 
+            <div className="mt-20 font-inter">
                 <div className="block md:flex justify-start align-center items-center gap-x-10 bg-gray-200 dark:bg-gray-800 rounded-2xl p-8">
                     <div className="w-40">
                         <h2 className="font-semibold text-2xl text-green-700">{t('subTitle1')}</h2>
                     </div>
-                    <div className="grid grid-cols-3 gap-16">
+                    <div className="grid grid-cols-3 gap-16 mr-4">
                         <div className="flex flex-col align-center justify center items-center">
                             <h3 className="font-semibold mb-2 text-blue-700">{t('item1')}</h3>
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
@@ -74,6 +106,10 @@ export default function Skills() {
                                     <Image src="/materialui.png" alt="materialui" width={48} height={48} className="icon-image"/>
                                     <p className="icon-text">Material UI</p>
                                 </span>
+                                <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
+                                    <Image src="/framer.png" alt="FramerMotion" width={48} height={48} className="icon-image"/>
+                                    <p className="icon-text">Framer Motion</p>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -114,5 +150,5 @@ export default function Skills() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

@@ -10,7 +10,7 @@ export default function NavBar() {
   const { isDarkMode, toggleDarkMode } = useTheme();
 
   return (
-    <header className="max-w-6xl mx-auto font-inter">
+    <header className="max-w-6xl mx-auto font-inter ">
       <nav className="flex justify-between align-center items-center py-4 px-10 xl:px-0 font-semibold text-medium">
         <div className='w-12 h-12 rounded-full relative overflow-hidden'>
           <Image src="/perfil.jpg" alt='foto' layout='fill' objectFit='cover' />

@@ -1,11 +1,11 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import projects from './projectsData';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { useTranslations } from 'next-intl';
+import { motion, useInView } from 'framer-motion';
 
 export default function Projects() {
     const t = useTranslations('Projects');
@@ -22,17 +22,44 @@ export default function Projects() {
         );
     };
 
+    // Ref for the section
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
     return (
-        <section id="Projects" className="max-w-6xl mx-auto px-10 xl:px-0 py-10 relative">
+        <section ref={ref} id="Projects" className="max-w-6xl mx-auto px-10 xl:px-0 py-10 relative">
             <div className="relative">
-                <h1 className="text-4xl font-semibold font-inter my-auto relative top-10">{t('title')}</h1>
-                <h1 className="text-8xl absolute top-0 left-0 opacity-30">
+                <motion.h1
+                    className="text-4xl font-semibold font-inter my-auto relative top-10"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                    transition={{ duration: 1 }}
+                >
+                    {t('title')}
+                </motion.h1>
+                <motion.h1
+                    className="text-8xl absolute top-0 left-0 opacity-30"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                >
                     {t('title2')}
-                </h1>
+                </motion.h1>
             </div>
-            <div className="grid gird-cols-1 lg:grid-cols-2 gap-10 mt-20 font-inter">
+            <motion.div
+                className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-20 font-inter"
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ duration: 1, delay: 1 }}
+            >
                 {projects.map((project, projectId) => (
-                    <div key={project.id} className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <motion.div
+                        key={project.id}
+                        className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+                        initial={{ opacity: 0 }}
+                        animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+                        transition={{ duration: 1, delay: 1.5 + projectId * 0.3 }}
+                    >
                         <div>
                             <div className="relative group">
                                 <Link href={project.liveLink} target='_blank'>
@@ -79,9 +106,9 @@ export default function Projects() {
                                 <Link href={project.liveLink} target='blank' className="text-blue-500 mt-4 lg:mt-0 hover:underline">Live Site</Link>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </section>
     );
 }
