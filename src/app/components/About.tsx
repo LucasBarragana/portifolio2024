@@ -71,7 +71,7 @@ const About: React.FC = () => {
             <div className="grid grid-cols-2 gap-10 lg:gap-4">
               <p><span className="flex font-semibold text-blue-700 text-lg"><Person />{t('name')}:</span> <span>Lucas Oliveira Barragana</span></p>
               <p><span className="flex font-semibold text-blue-700 text-lg"><Terminal />{t('expirience')}:</span> <span>{t('time')}</span></p>
-              <p><span className="flex font-semibold text-blue-700 text-lg"><Email />Email:</span> <span>lucasobarragana@gmail.com</span></p>
+              <p><span className="flex font-semibold text-blue-700 text-lg"><Email />Email:</span> <span>lucasobarragana @gmail.com</span></p>
               <p><span className="flex font-semibold text-blue-700 text-lg"><Phone />{t('phone')}:</span><span>+55(53)991743979</span></p>
             </div>
             <div className="py-6">

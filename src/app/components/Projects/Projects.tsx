@@ -98,7 +98,7 @@ export default function Projects() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="block lg:flex mt-8  font-semibold ">
+                            <div className="hidden sm:block lg:flex mt-8  font-semibold ">
                                 <Link href={project.githubLink} target='blank' className="text-blue-500 hover:underline mr-0 lg:mr-4">
                                     GitHub
                                     <Image src="/github.png" alt='' width={36} height={36} />
@@ -106,6 +106,13 @@ export default function Projects() {
                                 <Link href={project.liveLink} target='blank' className="text-blue-500 mt-4 lg:mt-0 hover:underline">Live Site</Link>
                             </div>
                         </div>
+                        <div className="flex sm:hidden mt-8 space-x-10 sm:space-x-0  font-semibold ">
+                                <Link href={project.githubLink} target='blank' className="text-blue-500 hover:underline mr-0 lg:mr-4">
+                                    GitHub
+                                    <Image src="/github.png" alt='' width={36} height={36} />
+                                </Link>
+                                <Link href={project.liveLink} target='blank' className="text-blue-500 mt-4 lg:mt-0 hover:underline">Live Site</Link>
+                            </div>
                     </motion.div>
                 ))}
             </motion.div>

@@ -77,7 +77,7 @@ export default function Contact() {
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="flex flex-col justify-center items-center p-10 rounded-lg mx-10 lg:mx-40">
                             <div>
-                                <h2 className="text-3xl mb-3 font-semibold mb-10">{t('subTitle1')}</h2>
+                                <h2 className="text-2xl sm:text-3xl mb-3 font-semibold mb-10">{t('subTitle1')}</h2>
                             </div>
                             <div className="flex w-full mb-3">
                                 <div className="flex flex-col mr-5 w-2/5">
@@ -121,9 +121,9 @@ export default function Contact() {
 
                             <button  id="btnSend"
                                 type="submit"
-                                className="flex items-center justify-center px-4 py-2 rounded border boder-gray-900 dark:border-white">
+                                className="flex items-center justify-center px-4 py-2  rounded border boder-gray-900 dark:border-white">
                                 {t('send')}
-                                <Image width={22} height={22}  src="/send.png" alt="send" />
+                                <Image width={22} height={22}  src="/send.png" alt="send" className='ml-4'/>
                             </button>
                             {isSent && (
                                 <p className="bg-green-900 text-white p-5 rounded-lg mt-2 font-semibold mt-5">

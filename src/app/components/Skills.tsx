@@ -52,7 +52,7 @@ export default function Skills() {
                     <div className="w-40">
                         <h2 className="font-semibold text-2xl text-green-500">{t('subTitle1')}</h2>
                     </div>
-                    <div className="grid grid-cols-3 gap-16 mr-4">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-16 mr-4">
                         <div className="flex flex-col align-center justify center items-center">
                             <h3 className="font-semibold mb-2 text-blue-500">{t('item1')}</h3>
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">

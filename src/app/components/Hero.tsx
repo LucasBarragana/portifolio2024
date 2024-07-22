@@ -22,7 +22,7 @@ export default function Hero() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <div className="block mr-10 ">
+                    <div className="hidden md:block mr-10 ">
                         <Link href="/https://github.com/LucasBarragana" className='w-10 h-auto'>
                             <Image src="/github.png" alt='' width={46} height={46} className='w-10 h-auto mb-10' />
                         </Link>
@@ -49,6 +49,14 @@ export default function Hero() {
                         <h1 className="text-6xl font-bold my-6">Lucas Barragana</h1>
                         <p className="text-2xl mt-4">{t('p11')}<span className="font-semibold text-green-500">{t('p12')}</span> <span className="font-light">{t('p13')}</span></p>
                         <p className="mt-2 text-lg">{t('p2')}</p>
+                        <div className="flex md:hidden mt-10 space-x-10">
+                            <Link href="/https://github.com/LucasBarragana" className='w-10 h-auto'>
+                                <Image src="/github.png" alt='' width={46} height={46} className='w-10 h-auto mb-10' />
+                            </Link>
+                            <Link href="/https://www.linkedin.com/in/lucas-barragana-564b05187/" className='w-10 h-auto'>
+                                <Image src="/icons8-linkedin-48.png" alt='' width={52} height={52} className='w-10 h-auto' />
+                            </Link>
+                        </div>
                         <div className="flex mt-8">
                             <Link href="/Curriculo.doc" passHref className="flex items-center mr-4 bg-blue-700 text-white px-4 py-2 rounded">
                                 <Download />
