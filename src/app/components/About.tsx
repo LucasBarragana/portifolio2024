@@ -30,9 +30,9 @@ const About: React.FC = () => {
   const courseImages: Record<string, string> = {
     'Node.js': '/node-certificado.jpg',
     'React.js': '/React-certificado.jpg',
-    'React Native': '/MongoDB-certificado.jpg',
-    'Angular': '/MongoDB-certificado.jpg',
-    'JavaScript and TypeScript': '/MongoDB-certificado.jpg',
+    'React Native': '/react-native.jpg',
+    'Angular': '/angular.jpg',
+    'JavaScript and TypeScript': '/js-ts.jpg',
     'Database SQL, NoSQL': '/MongoDB-certificado.jpg',
     'MongoDB': '/MongoDB-certificado.jpg',
   };
@@ -55,7 +55,7 @@ const About: React.FC = () => {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          IMAGEM
+          
         </motion.div>
         <motion.div
           className="w-full lg:w-2/3"
@@ -65,9 +65,7 @@ const About: React.FC = () => {
         >
           <h3 className="text-green-500 font-semibold text-2xl">{t('h3')}?</h3>
           <h2 className="text-3xl font-semibold py-2">{t('h2')}</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quae, 
-            vel et ea quo, repellendus doloremque odit, fuga suscipit iste possimus recusandae nisi? 
-            Ad sapiente rerum accusamus vero voluptate ratione.</p>
+          <p>{t('descriptionAbout')}</p>
           <div className="bg-black dark:bg-white w-full h-[2px] my-6"></div>
           <div>
             <div className="grid grid-cols-2 gap-10 lg:gap-4">

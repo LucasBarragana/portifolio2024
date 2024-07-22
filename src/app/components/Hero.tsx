@@ -47,7 +47,7 @@ export default function Hero() {
                             </div>
                         </div>
                         <h1 className="text-6xl font-bold my-6">Lucas Barragana</h1>
-                        <p className="text-2xl mt-4">{t('p11')}<span className="font-semibold">{t('p12')}</span> <span className="font-light">{t('p13')}</span></p>
+                        <p className="text-2xl mt-4">{t('p11')}<span className="font-semibold text-green-700">{t('p12')}</span> <span className="font-light">{t('p13')}</span></p>
                         <p className="mt-2 text-lg">{t('p2')}</p>
                         <div className="flex mt-8">
                             <Link href="/Curriculo.doc" passHref className="flex items-center mr-4 bg-blue-700 text-white px-4 py-2 rounded">
