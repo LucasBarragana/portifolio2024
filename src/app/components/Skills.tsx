@@ -50,11 +50,11 @@ export default function Skills() {
             <div className="mt-20 font-inter">
                 <div className="block md:flex justify-start align-center items-center gap-x-10 bg-gray-200 dark:bg-gray-800 rounded-2xl p-8">
                     <div className="w-40">
-                        <h2 className="font-semibold text-2xl text-green-700">{t('subTitle1')}</h2>
+                        <h2 className="font-semibold text-2xl text-green-500">{t('subTitle1')}</h2>
                     </div>
                     <div className="grid grid-cols-3 gap-16 mr-4">
                         <div className="flex flex-col align-center justify center items-center">
-                            <h3 className="font-semibold mb-2 text-blue-700">{t('item1')}</h3>
+                            <h3 className="font-semibold mb-2 text-blue-500">{t('item1')}</h3>
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/html.png" alt="html" width={48} height={48} className="icon-image"/>
@@ -75,7 +75,7 @@ export default function Skills() {
                             </div>
                         </div>
                         <div className="flex flex-col align-center justify center items-center">
-                            <h3 className="font-semibold mb-2 text-blue-700">{t('item2')}</h3>
+                            <h3 className="font-semibold mb-2 text-blue-500">{t('item2')}</h3>
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/react2.png" alt="react" width={48} height={48} className="icon-image"/>
@@ -92,7 +92,7 @@ export default function Skills() {
                             </div>
                         </div>
                         <div className="flex flex-col align-center justify center items-center">
-                            <h3 className="font-semibold mb-2 text-blue-700">{t('item3')}</h3>
+                            <h3 className="font-semibold mb-2 text-blue-500">{t('item3')}</h3>
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/tailwind.png" alt="tailwind" width={48} height={48} className="icon-image"/>
@@ -116,7 +116,7 @@ export default function Skills() {
                 </div>
                 <div className="block md:flex justify-start align-center items-center gap-x-10 bg-gray-200 dark:bg-gray-800 rounded-2xl p-8 mt-8">
                     <div className="w-40">
-                        <h2 className="font-semibold text-2xl text-green-700">{t('subTitle2')}</h2>
+                        <h2 className="font-semibold text-2xl text-green-500">{t('subTitle2')}</h2>
                     </div>
                     <div className="grid grid-cols-3 gap-10">
                         <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
@@ -135,7 +135,7 @@ export default function Skills() {
                 </div>
                 <div className="block md:flex justify-start align-center items-center gap-x-10 bg-gray-200 dark:bg-gray-800 rounded-2xl p-8 mt-8">
                     <div>
-                        <h2 className="font-semibold text-2xl text-green-700">{t('subTitle3')}</h2>
+                        <h2 className="font-semibold text-2xl text-green-500">{t('subTitle3')}</h2>
                     </div>
                     <div className="grid grid-cols-2 gap-10">
                         <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
