@@ -21,8 +21,8 @@ const projects: Project[] = [
         techImages: ['/next.png', '/ts.png', '/tailwind.png', '/mongo.png', '/aws.png' ],
         mainImage: '/projects/fome1.png',
         secondaryImages: ['/projects/fome1.png', '/projects/fome3.png', '/projects/fome4.png', '/projects/fome5.png', '/projects/fome6.png', '/projects/fome7.png', '/projects/fome8.png'],
-        githubLink: 'https://github.com/LucasBarragana/ST-BURGUER',
-        liveLink: 'https://st-burguer.vercel.app/',
+        githubLink: 'https://github.com/LucasBarragana/STFOME',
+        liveLink: 'https://stfome-lucas-barraganas-projects.vercel.app/',
     },
     {
         id: 3,
