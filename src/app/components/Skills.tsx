@@ -58,19 +58,19 @@ export default function Skills() {
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/html.png" alt="html" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">HTML</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">HTML</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/css.png" alt="css" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">CSS</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">CSS</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/js.png" alt="js" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">JavaScript</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">JavaScript</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/ts.png" alt="ts" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">TypeScript</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">TypeScript</p>
                                 </span>
                             </div>
                         </div>
@@ -79,15 +79,15 @@ export default function Skills() {
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/react2.png" alt="react" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">React</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">React</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/next.png" alt="next" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">Next.js</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Next.js</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/angular.png" alt="angular" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">Angular</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Angular</p>
                                 </span>
                             </div>
                         </div>
@@ -96,19 +96,19 @@ export default function Skills() {
                             <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/tailwind.png" alt="tailwind" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">Tailwind</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Tailwind</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/Sass.png" alt="sass" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">Sass</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Sass</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/materialui.png" alt="materialui" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">Material UI</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Material UI</p>
                                 </span>
                                 <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                                     <Image src="/framer.png" alt="FramerMotion" width={48} height={48} className="icon-image"/>
-                                    <p className="icon-text">Framer Motion</p>
+                                    <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Framer Motion</p>
                                 </span>
                             </div>
                         </div>
@@ -121,15 +121,15 @@ export default function Skills() {
                     <div className="grid grid-cols-3 gap-10">
                         <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                             <Image src="/nodejs.png" alt="nodejs" width={48} height={48} className="icon-image"/>
-                            <p className="icon-text">Node.js</p>
+                            <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Node.js</p>
                         </span>
                         <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                             <Image src="/supabase.png" alt="supabase" width={48} height={48} className="icon-image"/>
-                            <p className="icon-text">Supabase</p>
+                            <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Supabase</p>
                         </span>
                         <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                             <Image src="/prisma.png" alt="prisma" width={48} height={48} className="icon-image"/>
-                            <p className="icon-text">Prisma</p>
+                            <p className="icon-text text-[0.5rem] md:text-[0.8rem]">Prisma</p>
                         </span>
                     </div>
                 </div>
@@ -137,14 +137,18 @@ export default function Skills() {
                     <div>
                         <h2 className="font-semibold text-2xl text-green-500">{t('subTitle3')}</h2>
                     </div>
-                    <div className="grid grid-cols-2 gap-10">
+                    <div className="grid grid-cols-3 gap-10">
                         <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                             <Image src="/mongo.png" alt="mongo" width={48} height={48} className="icon-image"/>
-                            <p className="icon-text">MongoDB</p>
+                            <p className="icon-text text-[0.5rem] md:text-[0.8rem]">MongoDB</p>
                         </span>
                         <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
                             <Image src="/postgre.png" alt="postgre" width={48} height={48} className="icon-image"/>
-                            <p className="icon-text">PostgreSQL</p>
+                            <p className="icon-text text-[0.5rem] md:text-[0.8rem]">PostgreSQL</p>
+                        </span>
+                        <span className="icon-container p-[0.5rem] md:p-[1.5rem] w-[3rem] md:w-[5rem] h-[3rem] md:h-[5rem]">
+                            <Image src="/aws.png" alt="postgre" width={48} height={48} className="icon-image"/>
+                            <p className="icon-text text-[0.5rem] md:text-[0.8rem]">AWS S3</p>
                         </span>
                     </div>
                 </div>

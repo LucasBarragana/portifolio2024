@@ -34,7 +34,7 @@ export default function NavBar() {
           </Link>
           <Link href="/en">
             <Image
-              src="/ingles.png"
+              src="/estados-unidos.png"
               alt="ingles"
               width={126}
               height={126}
