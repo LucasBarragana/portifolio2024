@@ -70,7 +70,7 @@ export default function Projects() {
                                 </Link>
                             </div>
                             <div className="grid grid-cols-3 mt-6 gap-4">
-                                {project.secondaryImages.map((image, index) => (
+                                {project.secondaryImages.slice(0, 5).map((image, index) => (
                                     <Image
                                         key={index}
                                         src={image}
@@ -81,6 +81,11 @@ export default function Projects() {
                                         onClick={() => handleImageClick(projectId, image)}
                                     />
                                 ))}
+                                {project.secondaryImages.length > 5 && (
+                                        <Link href={`/Project/${project.id}`} className="w-32 h-auto flex items-center justify-center bg-gray-200 dark:bg-gray-800 rounded cursor-pointer">
+                                        <span className="text-blue-500 hover:underline">Ver mais</span>
+                                        </Link>
+                                )}
                             </div>
                         </div>
                         <div>

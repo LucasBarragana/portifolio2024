@@ -4,6 +4,17 @@ import { Project } from './projectTypes';
 const projects: Project[] = [
     {
         id: 1,
+        title: 'Paty-Semijoias',
+        description: 'Model of a e-commerce website job for a client who wants to maximize their sales and make their service more professional and distinctive..',
+        technologies: ['next.js', 'javascript.js', 'tailwind.css'],
+        techImages: ['/next.png', '/js.png', '/tailwind.png', '/mongo.png', '/aws.png', '/stripe.png' ],
+        mainImage: '/projects/home.png',
+        secondaryImages: ['/projects/home.png', '/projects/perfil.png', '/projects/categories.png', '/projects/product.png', '/projects/banner.png', '/projects/order.png', '/projects/users.png'],
+        githubLink: 'https://github.com/LucasBarragana/adoters',
+        liveLink: 'https://adotepetrs.vercel.app/',
+    },
+    {
+        id: 2,
         title: 'Adote RS',
         description: 'Conecting people to rescue animals and a chance to help shelters to provide a good life for this animals.',
         technologies: ['next.js', 'typescript.js', 'tailwind.css'],
@@ -14,7 +25,7 @@ const projects: Project[] = [
         liveLink: 'https://adotepetrs.vercel.app/',
     },
     {
-        id: 2,
+        id: 3,
         title: 'ST FOME',
         description: 'STFOME is a complet and realistic food ordering app.',
         technologies: ['next.js', 'typescript.js', 'tailwind.css'],
@@ -25,7 +36,7 @@ const projects: Project[] = [
         liveLink: 'https://stfome-lucas-barraganas-projects.vercel.app/',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Car Rental',
         description: 'This project show me how to use API build for other and use some other stuf to build faster the front-end like shadcn.',
         technologies: ['next.js', 'typescript.js', 'tailwind.css'],
@@ -36,7 +47,7 @@ const projects: Project[] = [
         liveLink: 'https://car-rental-front-fawn.vercel.app/',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Album of Memories',
         description: 'Family website. Developed to keep memories. Distance can keep people apart, this website can bring them closer',
         technologies: ['next.js', 'typescript.js', 'tailwind.css'],
@@ -47,7 +58,7 @@ const projects: Project[] = [
         liveLink: 'https://github.com/LucasBarragana/Memorias',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Branding Landing Page',
         description: 'A page for a company specialized in paid digital traffic that aims to increase the visibility of other companies.',
         technologies: ['html', 'css.js', 'javascript'],
@@ -58,7 +69,7 @@ const projects: Project[] = [
         liveLink: 'https://lp-trafego-pago.vercel.app/',
     },
     {
-        id: 6,
+        id: 7,
         title: 'Big 3',
         description: 'This is my first project. That a build to put my knology about structure(HTML), estilization(CSS) and some functions(Javascript)',
         technologies: ['html', 'css.js', 'javascript'],
