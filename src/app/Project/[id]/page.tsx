@@ -27,8 +27,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     };
 
     return (
-        <section className="max-w-6xl mx-auto px-10 xl:px-0 py-10 relative">
-            <h1 className="text-4xl font-semibold font-inter mb-8">
+        <section className="max-w-4xl mx-auto px-10 xl:px-0 py-10 relative">
+            <Link href="/#projects"> Voltar</Link>
+            <h1 className="text-4xl font-semibold font-inter mb-8 mt-8">
                 {project.title}
             </h1>
             <div className="relative mb-8">
