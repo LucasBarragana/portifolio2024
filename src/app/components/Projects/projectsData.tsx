@@ -10,8 +10,8 @@ const projects: Project[] = [
         techImages: ['/next.png', '/js.png', '/tailwind.png', '/mongo.png', '/aws.png', '/stripe.png' ],
         mainImage: '/projects/home.png',
         secondaryImages: ['/projects/home.png', '/projects/perfil.png', '/projects/categories.png', '/projects/product.png', '/projects/banner.png', '/projects/order.png', '/projects/users.png'],
-        githubLink: 'https://github.com/LucasBarragana/adoters',
-        liveLink: 'https://adotepetrs.vercel.app/',
+        githubLink: 'https://paty-semijoias.vercel.app/',
+        liveLink: 'https://paty-semijoias.vercel.app/',
     },
     {
         id: 2,
